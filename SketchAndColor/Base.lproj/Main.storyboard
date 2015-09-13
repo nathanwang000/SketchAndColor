@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -86,6 +87,7 @@
                                 </state>
                                 <connections>
                                     <action selector="SketchMyPicPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HWh-GA-SYX"/>
+                                    <segue destination="NLA-kb-k9X" kind="show" id="sc7-hE-HBF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sketch'n'Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9L-2Z-ks6">
@@ -115,6 +117,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="366" y="139"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="axh-uP-PpB">
+            <objects>
+                <viewController id="NLA-kb-k9X" customClass="PhotoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OCn-g3-kne"/>
+                        <viewControllerLayoutGuide type="bottom" id="3t9-C7-WZ9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rei-JQ-99b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEV-F0-OUU">
+                                <rect key="frame" x="128" y="562" width="158" height="30"/>
+                                <state key="normal" title="Choose Existing Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSavedMediaBrowser:" destination="NLA-kb-k9X" eventType="touchUpInside" id="xmi-Ks-Qxq"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ys9-2i-3Px">
+                                <rect key="frame" x="84" y="85" width="443" height="350"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Ys9-2i-3Px" secondAttribute="centerX" id="9Ya-GQ-2k9"/>
+                            <constraint firstItem="Ys9-2i-3Px" firstAttribute="top" secondItem="OCn-g3-kne" secondAttribute="bottom" constant="50" id="GWa-7p-21s"/>
+                            <constraint firstItem="Ys9-2i-3Px" firstAttribute="leading" secondItem="rei-JQ-99b" secondAttribute="leadingMargin" constant="50" id="LXH-Vi-cKH"/>
+                            <constraint firstAttribute="centerX" secondItem="WEV-F0-OUU" secondAttribute="centerX" id="NVm-gV-2oO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ys9-2i-3Px" secondAttribute="trailing" constant="50" id="PjA-ZV-fMc"/>
+                            <constraint firstAttribute="centerY" secondItem="Ys9-2i-3Px" secondAttribute="centerY" id="fCB-km-Zgi"/>
+                            <constraint firstItem="3t9-C7-WZ9" firstAttribute="top" secondItem="WEV-F0-OUU" secondAttribute="bottom" constant="10" id="lFc-5O-sMl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Ys9-2i-3Px" id="4Aa-xm-hLS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Db2-zq-8Sf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069" y="139"/>
         </scene>
     </scenes>
     <resources>
