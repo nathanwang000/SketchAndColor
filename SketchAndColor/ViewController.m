@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SketchMyOwnViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *SketchMyOwnButton;
@@ -30,6 +31,11 @@
 
 - (IBAction)SketchMyOwnPressed:(id)sender {
     NSLog(@"Sketch My Own Pressed!");
+
+    UIViewController *sketchMyOwnViewController = [SketchMyOwnViewController new];
+    [self presentViewController:sketchMyOwnViewController animated:YES completion:nil];
+//    self.window.rootViewController = sketchMyOwnViewController;
+//    [self.window makeKeyAndVisible];
 }
 
 - (IBAction)SketchMyPicPressed:(id)sender {
