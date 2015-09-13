@@ -14,6 +14,8 @@
 		<string>github.com:yishaz/SketchAndColor.git</string>
 		<key>2E1132BD55E338E90CF68E7A92916ACDBC0584F4</key>
 		<string>github.com:firebase/ios-drawing.git</string>
+		<key>D45CA460AD8B9369B7C26F191251AA216CAC4FCB</key>
+		<string>github.com:justinmeiners/ios-color-wheel.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SketchAndColor.xcworkspace</string>
@@ -23,6 +25,8 @@
 		<string>..</string>
 		<key>2E1132BD55E338E90CF68E7A92916ACDBC0584F4</key>
 		<string>../../samples/ios-drawing</string>
+		<key>D45CA460AD8B9369B7C26F191251AA216CAC4FCB</key>
+		<string>../../samples/ios-color-wheel</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:yishaz/SketchAndColor.git</string>
@@ -32,6 +36,14 @@
 	<string>00DDF0AD37E9750A75B6015206100D33125482F9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D45CA460AD8B9369B7C26F191251AA216CAC4FCB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-color-wheel</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
