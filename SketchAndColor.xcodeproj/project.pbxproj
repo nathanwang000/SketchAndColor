@@ -16,7 +16,7 @@
 		67AB939B1BA4D3940070E363 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67AB93991BA4D3940070E363 /* LaunchScreen.xib */; };
 		67AB93A71BA4D3940070E363 /* SketchAndColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AB93A61BA4D3940070E363 /* SketchAndColorTests.m */; };
 		E07438A61BA5480800F9609C /* SketchMyOwnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E07438A51BA5480800F9609C /* SketchMyOwnViewController.m */; };
-		E07438AD1BA5CD1700F9609C /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E07438AB1BA5CD1700F9609C /* PhotoViewController.m */; };
+		E07438B11BA5D44B00F9609C /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E07438AF1BA5D44B00F9609C /* PhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +48,8 @@
 		D5E974750F3DA51B28F21FC8 /* Pods-SketchAndColor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SketchAndColor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SketchAndColor/Pods-SketchAndColor.debug.xcconfig"; sourceTree = "<group>"; };
 		E07438A41BA5480800F9609C /* SketchMyOwnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchMyOwnViewController.h; sourceTree = "<group>"; };
 		E07438A51BA5480800F9609C /* SketchMyOwnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchMyOwnViewController.m; sourceTree = "<group>"; };
-		E07438AA1BA5CD1700F9609C /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoViewController.h; path = ../../../../Downloads/PhotoViewController.h; sourceTree = "<group>"; };
-		E07438AB1BA5CD1700F9609C /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoViewController.m; path = ../../../../Downloads/PhotoViewController.m; sourceTree = "<group>"; };
+		E07438AF1BA5D44B00F9609C /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		E07438B01BA5D44B00F9609C /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,8 @@
 		67AB93891BA4D3940070E363 /* SketchAndColor */ = {
 			isa = PBXGroup;
 			children = (
-				E07438AA1BA5CD1700F9609C /* PhotoViewController.h */,
-				E07438AB1BA5CD1700F9609C /* PhotoViewController.m */,
+				E07438AF1BA5D44B00F9609C /* PhotoViewController.m */,
+				E07438B01BA5D44B00F9609C /* PhotoViewController.h */,
 				67AB938E1BA4D3940070E363 /* AppDelegate.h */,
 				E07438A41BA5480800F9609C /* SketchMyOwnViewController.h */,
 				E07438A51BA5480800F9609C /* SketchMyOwnViewController.m */,
@@ -292,7 +292,7 @@
 				E07438A61BA5480800F9609C /* SketchMyOwnViewController.m in Sources */,
 				67AB93901BA4D3940070E363 /* AppDelegate.m in Sources */,
 				67AB938D1BA4D3940070E363 /* main.m in Sources */,
-				E07438AD1BA5CD1700F9609C /* PhotoViewController.m in Sources */,
+				E07438B11BA5D44B00F9609C /* PhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
