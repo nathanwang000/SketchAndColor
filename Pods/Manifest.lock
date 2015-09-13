@@ -1,0 +1,13 @@
+PODS:
+  - jot (0.1.5):
+    - Masonry (~> 0.6.1)
+  - Masonry (0.6.2)
+
+DEPENDENCIES:
+  - jot
+
+SPEC CHECKSUMS:
+  jot: 0f5dc333defa6ad805d01adc3834b201c22510a7
+  Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
+
+COCOAPODS: 0.38.2

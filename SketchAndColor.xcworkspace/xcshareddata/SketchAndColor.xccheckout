@@ -5,28 +5,24 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5C3CE9AC-F4F7-4DEC-887F-66DEE35E5DD4</string>
+	<string>F91F9E3B-A529-49C3-82FE-E0E9A9AD9A63</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SketchAndColor</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>00DDF0AD37E9750A75B6015206100D33125482F9</key>
 		<string>github.com:yishaz/SketchAndColor.git</string>
-		<key>22DD4B0BCD07F2D50C78DE904F97275DDA8D34E3</key>
-		<string>github.com:krzysztofzablocki/KZLineDrawer.git</string>
 		<key>2E1132BD55E338E90CF68E7A92916ACDBC0584F4</key>
 		<string>github.com:firebase/ios-drawing.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SketchAndColor.xcodeproj</string>
+	<string>SketchAndColor.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>00DDF0AD37E9750A75B6015206100D33125482F9</key>
-		<string>../..</string>
-		<key>22DD4B0BCD07F2D50C78DE904F97275DDA8D34E3</key>
-		<string>../../../samples/KZLineDrawer</string>
+		<string>..</string>
 		<key>2E1132BD55E338E90CF68E7A92916ACDBC0584F4</key>
-		<string>../../../samples/ios-drawing</string>
+		<string>../../samples/ios-drawing</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:yishaz/SketchAndColor.git</string>
@@ -43,14 +39,6 @@
 			<string>2E1132BD55E338E90CF68E7A92916ACDBC0584F4</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ios-drawing</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>22DD4B0BCD07F2D50C78DE904F97275DDA8D34E3</string>
-			<key>IDESourceControlWCCName</key>
-			<string>KZLineDrawer</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
