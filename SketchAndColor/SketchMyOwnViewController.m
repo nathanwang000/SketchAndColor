@@ -15,7 +15,7 @@ NSString * const kPencilImageName = @"pencil";
 NSString * const kTextImageName = @"text";
 NSString * const kClearImageName = @"clear";
 NSString * const kSaveImageName = @"save";
-//NSString * const kBackImageName = @"back";
+NSString * const kBackImageName = @"back";
 
 @interface SketchMyOwnViewController () <JotViewControllerDelegate>
 
@@ -23,7 +23,7 @@ NSString * const kSaveImageName = @"save";
 @property (nonatomic, strong) UIButton *saveButton;
 @property (nonatomic, strong) UIButton *clearButton;
 @property (nonatomic, strong) UIButton *toggleDrawingButton;
-@property (nonatomic, strong) UIBarButtonItem *backButton;
+@property (nonatomic, strong) UIButton *backButton;
 
 @end
 
@@ -74,14 +74,16 @@ NSString * const kSaveImageName = @"save";
                                      action:@selector(toggleDrawingButtonAction)
                            forControlEvents:UIControlEventTouchUpInside];
         
-//        _cancelButton = [UIBarButtonItem new];
-//        self.clearButton.titleLabel.font = [UIFont fontWithName:@"FontAwesome" size:24.f];
-//        [self.clearButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
-//        [self.clearButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
-//        [self.clearButton setTitle:kClearImageName forState:UIControlStateNormal];
-//        [self.clearButton addTarget:self
-//                             action:@selector(doneButtonPressed:)
-//                   forControlEvents:UIControlEventTouchUpInside];
+        _backButton = [UIButton new];
+        self.backButton.titleLabel.font = [UIFont fontWithName:@"FontAwesome" size:24.f];
+        [self.backButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+        [self.backButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+        [self.backButton setTitle:kBackImageName forState:UIControlStateNormal];
+        [self.backButton addTarget:self
+                                     action:@selector(doneButtonPressed:)
+                           forControlEvents:UIControlEventTouchUpInside];
+        
+        
     }
     
     return self;
@@ -104,20 +106,27 @@ NSString * const kSaveImageName = @"save";
     [self.saveButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.and.width.equalTo(@44);
         make.right.equalTo(self.view).offset(-4.f);
-        make.top.equalTo(self.view).offset(4.f);
+        make.top.equalTo(self.view).offset(15.f);
     }];
     
     [self.view addSubview:self.clearButton];
     [self.clearButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.and.width.equalTo(@44);
         make.left.equalTo(self.view).offset(4.f);
-        make.top.equalTo(self.view).offset(4.f);
+        make.top.equalTo(self.view).offset(15.f);
     }];
     
     [self.view addSubview:self.toggleDrawingButton];
     [self.toggleDrawingButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.and.width.equalTo(@44);
         make.right.equalTo(self.view).offset(-4.f);
+        make.bottom.equalTo(self.view).offset(-4.f);
+    }];
+    
+    [self.view addSubview:self.backButton];
+    [self.backButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.and.width.equalTo(@44);
+        make.left.equalTo(self.view).offset(4.f);
         make.bottom.equalTo(self.view).offset(-4.f);
     }];
 }
